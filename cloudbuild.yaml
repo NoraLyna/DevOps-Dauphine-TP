@@ -1,4 +1,17 @@
 steps:
+- id: 'terraform init'
+  name: 'hashicorp/terraform:1.0.0'
+  script: terraform init
+  dir: ./DevOps-Dauphine-TP
+- id: 'terraform plan'
+  name: 'hashicorp/terraform:1.0.0'
+  script: terraform plan
+  dir: ./DevOps-Dauphine-TP
+- id: 'terraform apply'
+  name: 'hashicorp/terraform:1.0.0'
+  script: terraform apply --auto-approve
+  dir: ./DevOps-Dauphine-TP
+
 - name: 'gcr.io/cloud-builders/docker'
   args: ['build', '-t', 'us-central1-docker.pkg.dev/my-repository-399517/website-tools/image-wordpress', '.' ]
 

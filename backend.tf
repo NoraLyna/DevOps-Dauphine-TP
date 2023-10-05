@@ -15,5 +15,5 @@ terraform {
 
 
 provider "google" {
-    project = "tp-devops-dauphine-psl"
+    project = "my-repository-399517"
 }
