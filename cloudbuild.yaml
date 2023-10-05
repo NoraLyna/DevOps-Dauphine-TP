@@ -1,0 +1,22 @@
+steps:
+- name: 'gcr.io/cloud-builders/docker'
+  args: ['build', '-t', 'us-central1-docker.pkg.dev/my-repository-399517/website-tools/image-wordpress', '.' ]
+
+images :
+- 'us-central1-docker.pkg.dev/my-repository-399517/website-tools/image-wordpress' 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
